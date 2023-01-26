@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<!----------------------CSS START---------------------------------------->    
+    <style>
+        * {box-sizing: border-box}
+        body {font-family: Verdana, sans-serif; margin:0}
+        .mySlides {display: none}
+        img {vertical-align: middle;}
+        
+        /* Slideshow container */
+        .slideshow-container {
+          max-width: 500px;
+          position: relative;
+          margin: auto;
+        }
+        
+        /* Next & previous buttons */
+        .prev, .next {
+          cursor: pointer;
+          position: absolute;
+          top: 50%;
+          width: auto;
+          padding: 16px;
+          margin-top: -22px;
+          color: white;
+          font-weight: bold;
+          font-size: 18px;
+          transition: 0.6s ease;
+          border-radius: 0 3px 3px 0;
+          user-select: none;
+        }
+        
+        /* Position the "next button" to the right */
+        .next {
+          right: 0;
+          border-radius: 3px 0 0 3px;
+        }
+        
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover, .next:hover {
+          background-color: rgba(0,0,0,0.8);
+        }
+        
+        /* Caption text */
+        .text {
+          color: #ff0000;
+          background-color: black;
+          font-size: 45px;
+          padding: 15px 20px;
+          position: absolute;
+          top: 70px;
+          width: 100%;
+          text-align: center;
+        }
+        
+        /* Number text (1/3 etc) */
+        .numbertext {
+          color: #f2f2f2;
+          font-size: 12px;
+          padding: 8px 12px;
+          position: absolute;
+          top: 0;
+        }
+        
+        /* The dots/bullets/indicators */
+        .dot {
+          cursor: pointer;
+          height: 15px;
+          width: 15px;
+          margin: 0 2px;
+          background-color: #bbb;
+          border-radius: 50%;
+          display: inline-block;
+          transition: background-color 0.6s ease;
+        }
+        
+        .active, .dot:hover {
+          background-color: #717171;
+        }
+        
+        /* Fading animation */
+        .fade {
+          animation-name: fade;
+          animation-duration: 1.5s;
+        }
+        
+        @keyframes fade {
+          from {opacity: .4} 
+          to {opacity: 1}
+        }
+        
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+          .prev, .next,.text {font-size: 11px}
+        }
+
+
+    img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 100px;
+        }
+
+    iframe {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 100px;
+            }
+
+    h1 {
+        text-align: center;
+        background-color: #cf3e2bd2;
+        background-size: contain;
+        }
+
+    body{
+    background-image: url('/images/tool_gif.gif');
+    background-size: cover;
+    height: 100vh;
+    padding:0;
+    margin:0;
+        }
+    
+    p{
+      background-color: rgb(20, 136, 136);
+      background-size: cover;
+      font-style:impact;
+      font-size:2vw
+    }
+
+    ul{
+      background-color: rgb(124, 43, 161);
+      text-align: center;
+      font-size: x-large;
+      }
+
+  </style>
+<!------------------CSS END----------------------------------->
+
+    <title>Alberto Romero</title>
+</head>
+<h1 style="font-style:oblique;">Alberto Romero</h1>
+<body>
+    <img src="/images/you_page_pic1_2.jpeg">
+
+    <h1>About Me</h1>
+
+    <p>
+        My Name is Alberto Emmanuel Romero Valdez. 
+        I was born and raised in California, specifaclly in the bay area near 
+        San Francsico, Oakland, and San Jose. While growing up in Califronia 
+        my family and I, moved around from small town to small town. Eventually 
+        settling out in the country in a dairy farm from which I pefromed my 
+        duties in milking cows, hunting for sport, and having the privilage of enjoying 
+        nature away from the city.
+    </p>
+
+            <h1>Fun Facts about me</h1>
+    
+        <div class="slideshow-container">
+        
+        <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+            <img src="/images/you_page_pic2_1.jpeg" width="500">
+        <div class="text">I joined the Marine Corps at 18</div>
+          </div>
+
+
+        <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+            <video width="500" controls autoplay>
+                <source src="/images/IMG_2378 (2).MOV" type="video/mp4">
+            </video>
+                <div class="text">I have four Ferrets!</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+                <img src="/images/you_page_3_2.jpg" width="500">
+            <div class="text">And I love to Party!</div>
+              </div>
+
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+              </div>
+
+
+            <div>
+            <iframe width="350" height="315" 
+              src="https://www.youtube.com/embed/qKgU-N8mFcc" title="YouTube video player" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              allowfullscreen>
+            </iframe>
+            </div>
+            <br>
+            <p style="color:rgba(133, 7, 105, 0.856);">
+              The Bhagavad Gita, an ancient Hindu epic that holds a special place in my heart. 
+              It has changed my perspective towards life and 
+              gave me a sense purpose in the world.
+            </p>
+
+
+              <img src="/images/you_page_pic4_1.jpg">
+              <br>
+              <h1>Three things i have learned at I.C. Stars</h1>
+                <ul>
+                  <li>Being comfortable speaking in public</li>
+                  <li>Managing my time more efficiently</li>
+                  <li>There are people out there just like me</li>
+                </ul>
+            <br>
+
+      <!------------------JAVASCRIPT START---------------------------------------->        
+              <script>
+                let slideIndex = 1;
+                showSlides(slideIndex);
+                
+                function plusSlides(n) {
+                  showSlides(slideIndex += n);
+                }
+                
+                function currentSlide(n) {
+                  showSlides(slideIndex = n);
+                }
+                
+                function showSlides(n) {
+                  let i;
+                  let slides = document.getElementsByClassName("mySlides");
+                  let dots = document.getElementsByClassName("dot");
+                  if (n > slides.length) {slideIndex = 1}    
+                  if (n < 1) {slideIndex = slides.length}
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                  }
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                }
+            </script>
+
+    <!----------------------JAVASCRIPT END ----------------------------------------------------------->
+
+
+    
+
+          
+
+
+
+    </div>
+
+    
+</body>
+</html>
